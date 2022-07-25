@@ -1,0 +1,25 @@
+body {
+  font-family: $font-secondary;
+  width: 100%;
+  min-width: $sm;
+  color: $primary;
+}
+
+html {
+  font-size: $font-size-default;
+}
+
+.container {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 $sm-padding;
+
+  @include media($md) {
+    padding: 0 $md-padding;
+  }
+}
+
+.flex {
+  display: flex;
+}
